@@ -1,0 +1,70 @@
+.block {
+  display: block ;
+}
+.inline-block {
+  display: inline-block ;
+}
+.inline {
+  display: inline ;
+}
+.hidden {
+  display: none ;
+}
+
+.none-block {
+  display: none ;
+  @media (max-width: 992px) {
+    display: block ;
+  }
+}
+
+.block-none,
+.block-none-sm {
+  @extend .block;
+}
+.inline-none {
+  @extend .inline;
+}
+.inline-flex-none,
+.inline-flex-none-sm {
+  display: inline-flex;
+}
+.none-inline {
+  @extend .hidden;
+  @include respond-to("md") {
+    display: inline ;
+  }
+}
+
+.none-block-sm {
+  display: none;
+}
+
+@include respond-to("sm") {
+  .block-none-sm {
+    display: none ;
+  }
+  .none-block-sm {
+    display: block ;
+  }
+}
+
+@include respond-to("md") {
+  .block-none,
+  .inline-none,
+  .inline-flex-none,
+  .inline-flex-none-sm {
+    display: none ;
+  }
+  .width-100-mb {
+    width: 100%;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}

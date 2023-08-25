@@ -1,0 +1,23 @@
+@mixin setWidth($maxWidth: null, $width: null) {
+  max-width: $maxWidth;
+  width: $width;
+}
+@mixin setHeight($maxHeight: null, $height: null) {
+    max-height: $maxHeight;
+    height: $height;
+  }
+@mixin setArea($width: 100%, $maxWidth: null, $height: auto, $maxHeight: null) {
+  max-width: $maxWidth;
+  width: $width;
+  max-height: $maxHeight;
+  height: $height;
+}
+
+@mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  

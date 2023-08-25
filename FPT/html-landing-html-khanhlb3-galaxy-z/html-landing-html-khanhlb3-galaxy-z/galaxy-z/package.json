@@ -1,0 +1,16 @@
+{
+  "name": "landing-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/main.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "swiper": "^8.0.7"
+  },
+  "description": ""
+}

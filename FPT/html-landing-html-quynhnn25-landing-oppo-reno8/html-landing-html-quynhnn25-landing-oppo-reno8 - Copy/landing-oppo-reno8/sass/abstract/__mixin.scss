@@ -1,0 +1,102 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexInCenter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin textWrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin flexJustify($space) {
+    display: flex;
+    justify-content: $space;
+}
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin setLine($row: 2) {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin hover() {
+    &:active,
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin setText($ff, $fs, $color) {
+    font-family: $ff;
+    font-size: $fs;
+    color: $color;
+}
+
+@mixin setAcreage($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin setBg($url, $position: center, $repeat: no-repeat, $cover: cover) {
+    background: url($url) $repeat $position;
+    background-size: $cover;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint== "lg" {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "md" {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "sm" {
+        @media only screen and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "xsm" {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "xs" {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "xxs" {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $breakpoint== "cxs" {
+        @media only screen and (max-width: 359px) {
+            @content;
+        }
+    }
+}

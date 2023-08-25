@@ -1,0 +1,27 @@
+@mixin textWrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin textLine($row: 2) {
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin font($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin font-lh($size, $weight, $lh) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height:  $lh;
+}
+@mixin setText($ff, $fs, $color) {
+    font-family: $ff;
+    font-size: $fs;
+    color: $color;
+}
+  

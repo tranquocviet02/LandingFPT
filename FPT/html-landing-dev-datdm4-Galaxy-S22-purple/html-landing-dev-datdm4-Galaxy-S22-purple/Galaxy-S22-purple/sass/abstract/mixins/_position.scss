@@ -1,0 +1,32 @@
+@mixin position($position, $top: null, $right: null, $bot: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bot;
+    left: $left;
+}
+@mixin absolute($args...) {
+    @include position(absolute, $args...);
+}
+@mixin relative($args...) {
+    @include position(relative, $args...);
+}
+@mixin fixed($args...) {
+    @include fixed(fixed, $args...);
+}
+@mixin centerAbsolute($direction: "both") {
+    position: absolute;
+    @if $direction == "both" {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @if $direction == "X" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $direction == "Y" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

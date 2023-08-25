@@ -1,0 +1,4 @@
+@mixin bgUrl($url, $position: center, $repeat: no-repeat, $cover: cover) {
+    background: url($url) $repeat $position;
+    background-size: $cover;
+}

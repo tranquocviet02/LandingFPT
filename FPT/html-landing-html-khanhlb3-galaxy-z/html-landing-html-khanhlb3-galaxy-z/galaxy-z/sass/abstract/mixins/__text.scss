@@ -1,0 +1,11 @@
+@mixin font ($fz, $lh, $c){
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+@mixin fontfull ($fz, $lh, $c, $fw){
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+    font-weight: $fw;
+}

@@ -1,0 +1,10 @@
+@function scaling($maxSize, $minSize, $maxMedia: 1920, $minMedia: 375) {
+  $minS: $minSize * 1px;
+  $maxS: $maxSize * 1px;
+  $minM: $minMedia * 1px;
+  $maxM: $maxMedia * 1px;
+  $result: calc(
+    #{$minS} + (#{$maxSize} - #{$minSize}) * ((100vw - #{$minM}) / (#{$maxMedia} - #{$minMedia}))
+  );
+  @return $result;
+}

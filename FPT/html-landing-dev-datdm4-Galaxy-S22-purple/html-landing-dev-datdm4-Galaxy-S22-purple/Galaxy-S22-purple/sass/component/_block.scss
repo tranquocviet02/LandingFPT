@@ -1,0 +1,16 @@
+.text {
+    &-heading {
+        margin-bottom: 18px;
+    }
+    &-desc {
+        margin-bottom: 10px;
+    }
+    @include responsive(md) {
+        &-heading,
+        &-desc{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// paragraph component

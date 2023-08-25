@@ -1,0 +1,282 @@
+.tintuc {
+    padding: 20px 0;
+    background-color: #fff;
+  }
+  .tintuc-wrap {
+    padding: 20px 10px;
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+    border-radius: 6px;
+  }
+  .tintuc .title_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .tintuc .title_top a {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #0664f9;
+  }
+  .tintuc .title_top h3 {
+    font-family: "Roboto";
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+  }
+  .tintuc .line {
+    max-width: 305px;
+    height: 3px;
+    border-radius: 8px;
+    background-image: linear-gradient(to left, #115db5, #03bed8, #ff9fea);
+    margin: 0 auto 40px;
+  }
+  .tintuc .section-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .tintuc .section-main .col2-left {
+    width: 53.5%;
+    margin-right: 30px;
+  }
+  .tintuc .section-main .col2-right {
+    flex: 1;
+    padding-left: 20px;
+  }
+  .tintuc .section-main .col2-right {
+    overflow: auto;
+    transition: all 0.5s;
+  }
+  .tintuc .tag {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    background: #EDEEEF;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-right: 8px;
+    color: #6A737A;
+    border-radius: 4px;
+  
+  }
+  .tintuc .tag:hover{
+      color: #6A737A;
+  }
+  .tintuc .section-main .col2-left .tt-txt a h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Roboto";
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 8px;
+    color: #32373d;
+  }
+  .tintuc .mess {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  .tintuc .tt-txt {
+    padding: 8px 0;
+  }
+  .tintuc .tt-img {
+  }
+  .tintuc .tt-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .tintuc .item:last-child article {
+    margin-bottom: 0;
+  }
+  .tintuc article {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  .tintuc .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .tintuc article span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: "Helvetica";
+    color: #a5a5a5;
+  }
+  .tintuc article > * {
+    display: block;
+  }
+  .tintuc a:hover,
+  .tintuc a:active,
+  .tintuc a:focus {
+    text-decoration: none;
+  }
+  .tintuc article  a.avt {
+    position: relative;
+    max-width: 120px;
+    height: auto;
+    margin-right: 13px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .tintuc article  a.avt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tintuc article a.link {
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+  }
+  .tintuc article a.link h4 {
+    font-family: "Roboto";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1b1b1b;
+    margin-bottom: 8px;
+    padding-right: 8px;
+  }
+  .tintuc article .tt-viewmore a {
+    display: inline-block;
+    border: 1px solid #747474;
+    position: relative;
+    width: 161.8px;
+    height: 35px;
+    line-height: 35px;
+    color: #747474;
+    font-family: "rbt-r";
+    font-size: 16px;
+  }
+  .tintuc article .tt-viewmore a span {
+    margin-left: -12px;
+  }
+  .tintuc article .tt-viewmore a:before {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #747474;
+    border-left: 2px solid #747474;
+    transform: rotate(-135deg);
+  }
+  .tintuc .right-wrap{
+      flex: 1;
+  }
+  .tintuc .right-wrap{
+      font-size: 0;
+  }
+  @media (max-width: 991px) {
+    .tintuc .title_top {
+      font-size: 30px;
+      max-width: 323px;
+      margin: 0 auto 17px;
+      text-align: center;
+      justify-content: center;
+    }
+    .tintuc .section-main {
+      flex-flow: column;
+      margin-bottom: 0;
+    }
+    .tintuc .section-main .col2-left {
+     width: auto;
+     margin-right: 0;
+      margin-bottom: 8px;
+    }
+    .tintuc .tt-img{
+        text-align: center;
+    }
+    .tintuc .section-main .col2-right {
+      overflow: hidden;
+      max-height: unset;
+      padding-left: 0;
+    }
+    .tintuc .section-main .col2-left .tt-txt a h4 {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .tintuc-wrap{
+        padding: 0;
+        box-shadow: unset;
+    }
+    .tintuc .tag{
+        display: none;
+    }
+    .tintuc .title_top {
+      font-size: 28px;
+      margin-bottom: 17px;
+    }
+    .tintuc .view-more,
+    .tintuc .view-more i {
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: center;
+      color: #0664f9;
+    }
+    .tintuc .line {
+      margin: 0 auto 32px;
+    }
+    .tintuc .tintuc .mess {
+      font-size: 15px;
+    }
+    .tintuc .tt-img,
+    .tintuc .tt-img img {
+      height: unset;
+    }
+    .tintuc .col2-left .tt-txt a p {
+      font-size: 18px;
+      height: 50px;
+    }
+    .tintuc .tintuc .mess {
+      font-size: 15px;
+    }
+    .tintuc article > a.avt {
+      max-width: 150px;
+      width: auto;
+      height: auto;
+    }
+    .tintuc .mess{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .tintuc article a.link h4 {
+      font-size: 14px;
+      height: auto;
+      line-height: 18px;
+      padding: 0;
+    }
+  }
+  

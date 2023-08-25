@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@include responsive("md") {
+    .box-container {
+        padding: 0 5px;
+    }
+}   
+@include responsive("md") {
+    .box-container {    
+        padding: 0 10px;
+    }
+    .desk-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}

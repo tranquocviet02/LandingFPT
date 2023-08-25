@@ -1,0 +1,19 @@
+@mixin flexCenter($default: flex) {
+    display: $default;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexBetween() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin inlineFlexCenter() {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexJustify($space) {
+    display: flex;
+    justify-content: $space;
+}

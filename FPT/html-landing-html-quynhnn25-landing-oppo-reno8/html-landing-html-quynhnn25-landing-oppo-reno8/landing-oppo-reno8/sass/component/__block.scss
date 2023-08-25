@@ -1,0 +1,16 @@
+.text {
+    &_heading {
+        margin-bottom: 18px;
+    }
+    &_description {
+        margin-bottom: 10px;
+    }
+    @include responsive(xsm) {
+        &_heading,
+        &_description {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// paragraph component
